@@ -32,11 +32,11 @@ $(document).ready(function() {
         placeholder.addClass(who).attr('id', 'placeholder');
         $('#chat').append(placeholder);   
         
-        if($("#chat div[id!='placeholder']").length===1 || text==="So?\n"){
+        if($("#chat div[id!='placeholder']").length===1 || text==="So?\n" || text==="So?"){
             do_speak=true;
             $("#chat").trigger("chat_started");
         }
-        else if(text==="Shut up!\n"){
+        else if(text==="Shut up!\n" || text==="Shut up!" ){
             do_speak=false;        
         }
     }
