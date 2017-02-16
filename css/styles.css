@@ -1,0 +1,107 @@
+* {
+  box-sizing: border-box; /* To have control on the total sizes of elements disregarding paddings*/
+}
+
+body{
+    margin: 0 !important;  /* To override the default margin and padding in the body style */
+    padding: 0 !important; /* """ */
+    background-image: url("/assets/pattern.jpg");    
+    background-attachment: fixed; /* The background won't scroll with the chat*/
+}
+
+#contact{
+  height: 60px;
+  border-bottom: solid 2px;  
+  width: 100vw; /* 100% of view width*/
+  
+  background-color: #9DABC8;  
+  position: fixed;  
+}
+
+img{
+  height: 48px;
+  margin: 6px;
+  float:left; 
+}
+
+p{
+  float:left;
+  font-family: Arial, Helvetica, sans-serif;  
+  font-size: 20px;
+  font-weight: bold; 
+  margin: 0 0 0 10px;  
+  
+  line-height: 60px;  /* to specify the minimum height of the line contained */
+}
+
+#input{
+  height: 36px;
+  border-top: solid 2px;    
+  width: 100vw;
+  margin-top: calc(100vh - 36px);
+
+  background-color: white;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  
+  padding:  5px;
+
+  position: fixed;  
+}
+
+#input_form{  
+  width: calc(100vw - 80px);
+  height: 36px;
+
+  outline: none;  /* Border around the textarea*/
+  resize: none;   /* Disable resizing via dragging the lower right corner*/
+  
+  padding: 0;
+  border-width: 0;
+
+  font-size: 15px;
+
+}
+
+#input_btn{
+  width: 60px;  
+  float: right;
+  height: 100%;
+  
+  border-color: #9DABC8;
+  border-radius: 5px;
+
+  background-color: #9DABC8;
+
+  outline: none;
+  
+  font-size: 16px
+}
+
+.bubble{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    max-width: 52vw;
+    margin: 10px;
+    border-radius: 10px;
+    clear:  both;   /* Bubbles have to stay clear from each other also across opposite sides*/
+    font-size: 18px;
+}
+
+.bot{  
+  background-color: #269FCD;  
+  float: left;
+  color: white;  
+}
+
+.user{  
+  background-color: #6CCD40;  
+  float: right;
+}
+
+#placeholder{  /* Its only function is to allow the last bubble of the chat to emerge from the input line*/
+  
+  height: 70px; /* The only useful dimension is the height*/
+  
+  clear: both;  /* Like bubbles*/
+}
